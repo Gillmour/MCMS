@@ -13,7 +13,7 @@
 	function verifPseudoDejaUtiliser($pseudo)
 	{
 		global $sql;
-		$verif = $sql->prepare("SELECT  FROM comptes WHERE pseudo = :pseudo");
+		$verif = $sql->prepare("SELECT * FROM comptes WHERE pseudo = :pseudo");
 		$verif->execute(Array(":pseudo" => $pseudo));
 	
 		if($verif->rowCount() >= 1)
@@ -25,7 +25,7 @@
 	function mailDejaUtiliser($mail)
 	{
 		global $sql;
-		$verif = $sql->prepare("SELECT  FROM comptes WHERE mail = :mail");
+		$verif = $sql->prepare("SELECT * FROM comptes WHERE mail = :mail");
 		$verif->execute(Array(":mail" => $mail));
 	
 		if($verif->rowCount() >= 1)
