@@ -24,7 +24,7 @@
 			<div id="InscriptionForm" class="FormIndex" {if !$Inscription}style="display:none;"{/if}>
 				<form method="POST" name="inscription" action="/inscription">
 					{if isset($inscriptionMessageErreur['all'])}{$inscriptionMessageErreur['all']}<br />{/if}
-					<label>Pseudo: </label><input type="text" class="inputText" name="pseudoInscription" onKeyPress="if (event.keyCode == 13) document.inscription.submit(); verifPseudo(this.value)"  /><br /><div id="pseudobox"></div>
+					<label>Pseudo: </label><input type="text" class="inputText" name="pseudoInscription" onKeyPress="if (event.keyCode == 13) document.inscription.submit();" onKeyUp="verifPseudo(this.value);"  /><br /><div id="pseudobox"></div>
 					{if isset($inscriptionMessageErreur['pseudo'])}{$inscriptionMessageErreur['pseudo']}<br />{/if}
 					<label>Mot de passe: </label><input type="password" class="inputText" onKeyPress="if (event.keyCode == 13) document.inscription.submit()"  name="passInscription" /><br />
 					{if isset($inscriptionMessageErreur['pass'])}{$inscriptionMessageErreur['pass']}<br />{/if}
