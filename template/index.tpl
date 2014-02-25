@@ -23,13 +23,14 @@
 			</div>
 			<div id="InscriptionForm" class="FormIndex" {if !$Inscription}style="display:none;"{/if}>
 				<form method="POST" name="inscription" action="/inscription">
-					<label>Pseudo: </label><input type="text" class="inputText" name="pseudoInscription" onKeyPress="if (event.keyCode == 13) document.connexion.submit(); verifPseudo(this.value)"  /><br /><div id="pseudobox"></div>
+					{if isset($inscriptionMessageErreur['all'])}{$inscriptionMessageErreur['all']}<br />{/if}
+					<label>Pseudo: </label><input type="text" class="inputText" name="pseudoInscription" onKeyPress="if (event.keyCode == 13) document.inscription.submit(); verifPseudo(this.value)"  /><br /><div id="pseudobox"></div>
 					{if isset($inscriptionMessageErreur['pseudo'])}{$inscriptionMessageErreur['pseudo']}<br />{/if}
-					<label>Mot de passe: </label><input type="password" class="inputText" onKeyPress="if (event.keyCode == 13) document.connexion.submit()"  name="passInscription" /><br />
+					<label>Mot de passe: </label><input type="password" class="inputText" onKeyPress="if (event.keyCode == 13) document.inscription.submit()"  name="passInscription" /><br />
 					{if isset($inscriptionMessageErreur['pass'])}{$inscriptionMessageErreur['pass']}<br />{/if}
-					<label>Retape ton m.d.p.: </label><input type="password" class="inputText" onKeyPress="if (event.keyCode == 13) document.connexion.submit()"  name="repass" /><br />
+					<label>Retape ton m.d.p.: </label><input type="password" class="inputText" onKeyPress="if (event.keyCode == 13) document.inscription.submit()"  name="repass" /><br />
 					{if isset($inscriptionMessageErreur['repass'])}{$inscriptionMessageErreur['repass']}<br />{/if}
-					<label>Adresse mail: </label><input type="text" class="inputText" onKeyPress="if (event.keyCode == 13) document.connexion.submit()"  name="mail" /><br />
+					<label>Adresse mail: </label><input type="text" class="inputText" onKeyPress="if (event.keyCode == 13) document.inscription.submit()"  name="mail" /><br />
 					{if isset($inscriptionMessageErreur['mail'])}{$inscriptionMessageErreur['mail']}<br />{/if}
 					<label>Genre: </label>
 					<select name="sexe">

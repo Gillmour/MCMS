@@ -43,7 +43,7 @@
 				$inscriptionErreur = true;
 				$inscriptionMessagesErreur['pass'] = "<span style=\"color:#cc0000;font-family:Arial;\"><b>Votre mot de passe est trop long !</b></span>";
 			}
-			elseif($_POST['passInscription'] === $_POST['repass'])
+			elseif($_POST['passInscription'] == $_POST['repass'])
 			{
 				$inscriptionErreur = true;
 				$inscriptionMessagesErreur['repass'] = "<span style=\"color:#cc0000;font-family:Arial;\"><b>Les mots de passes ne correspondent pas !</b></span>";
