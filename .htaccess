@@ -1,0 +1,10 @@
+<Files ~ "\.tpl$">
+Order allow,deny
+Deny from all
+</Files>
+Options -Indexes
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule ^connexion$ index.php
+RewriteRule ^inscription$ index.php
+RewriteRule ^cgu$ cgu.php

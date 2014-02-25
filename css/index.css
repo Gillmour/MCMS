@@ -1,0 +1,121 @@
+﻿/*INDEX*/
+#CIBox
+{
+	margin:3px;
+	width:392px;
+	min-height:150px;
+	margin:auto;
+	background-color: rgba(255, 255, 255, 0.45);
+	padding:4px;
+	padding-bottom:24px;
+	border-radius:5px;
+	margin-top:50px;
+	font-family:alamain;
+	font-size:12px;
+	text-align:center;
+	display:block;
+}
+
+.FormIndex
+{
+	margin-right:50px;
+	text-align:right;
+	width:320px;
+	margin-top:20px;
+}
+
+#StatistiquesBox
+{
+	margin:3px;
+	width:400px;
+	min-height:100px;
+	margin:auto;
+	margin-top:20px;
+	display:block;
+}
+
+.StatistiqueBox
+{
+	width:130px;
+	height:75px;
+	margin:auto;
+	background-color: rgba(255, 255, 255, 0.45);
+	display:inline-block;
+	border-radius:5px;
+	text-align:center;
+	font-weight : bold;
+	padding-top:25px;
+}
+
+.StatistiqueBox:hover
+{
+	background-color: rgba(255, 255, 255, 1);
+	cursor:pointer;
+}
+
+.BoutonIndex
+{
+	background-image:url("../images/bgB.png");
+	font-family:alamain;
+	color:white;
+	padding:2px;
+	height:30px;
+	border:transparent;
+	border-radius:5px;
+	cursor:pointer;
+	text-decoration:;
+	display:inline-block;
+	text-align:center;
+}
+
+.BoutonIndex2
+{
+	background-image:url("../images/bgB2.png");
+	font-family:alamain;
+	color:white;
+	padding:2px;
+	width:80px;
+	height:30px;
+	border:transparent;
+	border-radius:5px;
+	cursor:pointer;
+	text-decoration:;
+	display:inline-block;
+	text-align:center;
+}
+
+#FooterIndex
+{
+	text-align:center;
+	color:black;
+	background-color: rgba(255, 255, 255, 0.2);
+	width:100%;
+	position:absolute;
+	bottom:0px;
+}
+
+
+.inputText
+{
+	width:148px;
+}
+
+select
+{
+	border: 1px solid black;
+	width:150px;
+}
+
+#core
+{
+	position: relative;
+	min-height: 100%;
+	margin: 0 auto;
+	padding-bottom: 200px;
+	padding-top:45px;
+}
+
+#superglobal{
+	position : relative;
+	min-height: 100%;
+}

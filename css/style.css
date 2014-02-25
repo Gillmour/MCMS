@@ -1,0 +1,29 @@
+﻿/* Initialisation Elements */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body {
+	height: 100%;	
+}
+@font-face {
+	font-family: 'alamain';
+	src: url('../fonts/alamain1.ttf');
+}
+input
+{
+	border:1px solid black;
+}
+
+#Logo
+{
+	width:400px;
+	height:100px;
+	margin:auto;
+	background-image:url('../images/logo.png');
+}
